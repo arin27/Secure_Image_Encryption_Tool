@@ -1,4 +1,3 @@
-# SCT_CS_2
 ABOUT:
 
 This program is a simple GUI application built with Python, Pillow(PIL) and tkinter(tk), which helps in encrypting and decrypting images using XOR operation. This program allows users to input an image and instantly encrypt it.
@@ -72,6 +71,3 @@ IMAGE DESCRIPTION:
 
 6) By clearing the page, previously input data is erased.
 <img width="1920" height="1080" alt="Screenshot (34)" src="https://github.com/user-attachments/assets/6d55a843-d1e7-465b-b001-dad5e3e85142" />
-
-Made with Love and Curiosity.
-Python and Pillow.
