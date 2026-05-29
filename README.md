@@ -1,3 +1,4 @@
+# Secure Image Encryption Tool
 ABOUT:
 
 This program is a simple GUI application built with Python, Pillow(PIL) and tkinter(tk), which helps in encrypting and decrypting images using XOR operation. This program allows users to input an image and instantly encrypt it.
