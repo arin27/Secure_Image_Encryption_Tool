@@ -1,55 +1,117 @@
 # Secure Image Encryption Tool
-ABOUT:
 
-This program is a simple GUI application built with Python, Pillow(PIL) and tkinter(tk), which helps in encrypting and decrypting images using XOR operation. This program allows users to input an image and instantly encrypt it.
+A Python-based GUI application that demonstrates image encryption and decryption using the XOR operation.
 
-FEATURES:
+Built with Python, Pillow (PIL), NumPy, and Tkinter, this project allows users to upload an image, encrypt it into unreadable pixel data, and later restore it using the same XOR-based process.
 
-1) Helps encrypt and decrypt any image using XOR operation.
-2) Once the image is encrypted, they can be decrypted by clicking the decrypt button.
-3) User friendly.
-4) Clear button to reset the form easily.
-5) Pillow(PIL) is a python module which helps users input image data.
-6) tkinter is a python module which supports designing of the output page.
+---
 
-USER INTERFACE:
+# Why This Project Exists
 
-1) Upload image: Button through which image in the form of jpg, png, jpeg and bmp can be uploaded.
-2) Encrypt button: Encrypts the provided image by changing the values of pixels.
-3) Decrypt button: Decrypts the already encrypted image using the XOR operation.
-4) Clear: Clears all input and output fields.
-5) Output label: Shows whether the message is encrypted or decrypted.
-6) If the Decrypt button is pressed before encrypting an image, an error message is displayed in the output label.
-7) Output images are auto saved.
-8) Encrypted image is saved as strong_encrypted_image and decrypted image is saved as strong_decrypted_image.
+Encryption is one of the fundamental concepts in cybersecurity.
 
-REQUIREMENTS:
+While most people hear terms like AES, RSA, and cryptography, it can be difficult to understand what encryption actually does to data.
 
-1) Python(version 3.10 or advanced).
-2) Pillow(to be pip installed through command prompt 'pip install Pillow').
-3) Numpy(to be pip installed through command prompt 'pip install numpy').
+This project demonstrates the concept visually by transforming an image into encrypted pixel data and restoring it back to its original form through decryption.
 
-HOW XOR OPERATION WORKS:
+The goal is to provide a simple and practical introduction to how encryption protects information.
 
-The XOR (also called 'exclusive OR') operation is a mathematical operation, used in image encryption and decryption by treating each byte of the image data and the key as binary values and performing a bitwise XOR on them. The result of this operation is a modified byte, which effectively scrambles the image data. To decrypt, the same XOR operation is performed again using the same key, which reverses the scrambling and restores the original image. XOR returns 1 when inputs differ and 0 when they're the same.
+---
 
-EXAMPLE:
+# Features
 
-1) for example, we have a byte with a value of 5 (binary 0101) and a key byte with a value of 10 (binary 1010). 
-2) Encryption: 5 XOR 10 = 15 (binary 1111).
-3) On XORing values (1010 and 1111) we obtain the binary value 5(0101).
-4) Decryption: 15 XOR 10 = 5.
-5) It gives back the original data.
-  
+- Upload images through a graphical interface
+- Encrypt images using XOR operations
+- Decrypt encrypted images back to their original form
+- Automatic output saving
+- Error handling and status notifications
+- Simple and beginner-friendly interface
 
-6) 5 (0101) XOR 10 (1010) = 15 (1111)
-7) 15 (1111) XOR 10 (1010) = 5 (0101)  # original value restored.
+---
 
-HOW TO RUN:
+# Technologies Used
 
-1) Install python 3.10 or advanced.
-2) Install the required modules (Pillow and Numpy).
-3) Run the script.
+- Python
+- Tkinter
+- Pillow (PIL)
+- NumPy
+
+---
+
+# Requirements
+
+Install the required libraries:
+
+pip install pillow numpy
+
+---
+
+# How to Run
+
+Run the script:
+
+python image_encryption.py
+
+1. Upload an image
+2. Click Encrypt
+3. View the encrypted output
+4. Click Decrypt to restore the image
+5. Use Clear to reset the application
+
+---
+
+# How XOR Encryption Works
+
+XOR (Exclusive OR) is a bitwise operation commonly used in cryptography.
+
+One interesting property of XOR is:
+
+A XOR B XOR B = A
+
+This means that data encrypted with a key can be restored by applying the same key again.
+
+Example:
+
+5 XOR 10 = 15
+
+15 XOR 10 = 5
+
+The original value is recovered because the same key is applied twice.
+
+---
+
+# Demonstration
+
+Original Image:
+(Insert Screenshot)
+
+Encrypted Image:
+(Insert Screenshot)
+
+Decrypted Image:
+(Insert Screenshot)
+
+---
+
+# Cybersecurity Relevance
+
+This project introduces learners to:
+
+- Cryptography fundamentals
+- XOR operations
+- Data confidentiality
+- Image processing
+- Encryption and decryption workflows
+
+While modern systems use significantly stronger algorithms, XOR encryption is an excellent way to understand the core logic behind how encrypted data can be transformed and later restored.
+
+---
+
+# Disclaimer
+
+This project was created for educational purposes only.
+
+The XOR technique used here is intended for learning and demonstration. Modern security systems rely on stronger encryption standards such as AES and RSA for real-world protection.
 
 IMAGE DESCRIPTION:
 
